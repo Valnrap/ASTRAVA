@@ -8,7 +8,6 @@ package com.mycompany.astrava;
  *
  * @author Valentino Raffael
  */
-package com.mycompany.astrava;
 
 public class Astrava {
 
