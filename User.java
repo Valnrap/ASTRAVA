@@ -8,12 +8,13 @@ package com.mycompany.astrava;
  *
  * @author Valentino Raffael
  */
+
 public class User {
-    
-    String name;
-    int age;
-    double weight;
-    double height;
+
+    private String name;
+    private int age;
+    private double weight;
+    private double height;
 
     public User(String name, int age, double weight, double height) {
         this.name = name;
@@ -21,7 +22,8 @@ public class User {
         this.weight = weight;
         this.height = height;
     }
-public String getName() {
+
+    public String getName() {
         return name;
     }
 
