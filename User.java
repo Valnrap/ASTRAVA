@@ -11,10 +11,10 @@ package com.mycompany.astrava;
 
 public class User {
 
-    private String name;
-    private int age;
-    private double weight;
-    private double height;
+    String name;
+    int age;
+    double weight;
+    double height;
 
     public User(String name, int age, double weight, double height) {
         this.name = name;
@@ -36,11 +36,7 @@ public class User {
     }
 
     public void setAge(int age) {
-        if (age > 0) {
-            this.age = age;
-        } else {
-            System.out.println("Age tidak valid. Age harus lebih dari 0.");
-        }
+        this.age = age;
     }
 
     public double getWeight() {
@@ -60,9 +56,8 @@ public class User {
     }
 
     public void displayHealthProfile() {
-        System.out.println("==== ASTRAVA HEALTH PROFILE =====");
         System.out.println("Name   : " + name);
-        System.out.println("Age    : " + age + " years");
+        System.out.println("Age    : " + age);
         System.out.println("Weight : " + weight + " kg");
         System.out.println("Height : " + height + " cm");
     }
