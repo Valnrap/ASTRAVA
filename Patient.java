@@ -1,7 +1,8 @@
 package com.mycompany.astrava;
 
 public class Patient extends User {
-    private String medicalHistory;
+
+    String medicalHistory;
 
     public Patient(String name, int age, double weight, double height, String medicalHistory) {
         super(name, age, weight, height);
@@ -16,8 +17,12 @@ public class Patient extends User {
         this.medicalHistory = medicalHistory;
     }
 
-    public void displayPatientProfile() {
-        displayHealthProfile();
+    @Override
+    public void displayHealthProfile() {
+        System.out.println("Name            : " + name);
+        System.out.println("Age             : " + age);
+        System.out.println("Weight          : " + weight + " kg");
+        System.out.println("Height          : " + height + " cm");
         System.out.println("Medical History : " + medicalHistory);
     }
 }
